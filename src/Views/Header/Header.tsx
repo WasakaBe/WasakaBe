@@ -47,9 +47,7 @@ export default function Header() {
             <button className="csv-btn" onClick={showPDF}>
               Download CV
             </button>
-            <button className="linkedin-btn" onClick={redirectToLinkedIn}>
-              LinkedIn
-            </button>
+         
           </div>
         </div>
       </div>
