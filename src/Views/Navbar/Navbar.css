@@ -1,0 +1,123 @@
+/* General Navbar */
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 20px;
+ background-color: var(--black);
+ color: var(--white); 
+ font-family: "Teko", sans-serif;
+ position: relative;
+}
+
+/* Left Section */
+.navbar-left {
+ display: flex;
+ align-items: center;
+}
+
+.logo {
+ width: 40px;
+ height: 40px;
+ margin-right: 10px;
+ border: 2px solid var(--white); /* Borde blanco para destacar */
+ border-radius: 50%; /* Redondear el logo */
+}
+
+.title {
+ font-size: 1.5rem;
+ font-weight: bold;
+ color: var(--white); /* Título en blanco */
+}
+
+/* Right Section */
+.navbar-right {
+ display: flex;
+ gap: 20px;
+ transition: all 0.3s ease-in-out;
+}
+
+/* Links */
+.nav-link {
+ text-decoration: none;
+ color: var(--white); /* Texto blanco */
+ font-size: 1.8rem;
+ transition: color 0.3s, background-color 0.3s;
+ padding: 5px 10px;
+ border-radius: 5px; /* Suavizar bordes */
+}
+
+.nav-link:hover {
+ color: var(--black); /* Texto negro al pasar el mouse */
+ background-color: var(--gray-soft); /* Fondo gris suave */
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ background: none;
+ border: none;
+ cursor: pointer;
+ z-index: 10;
+}
+
+.bar {
+ width: 30px;
+ height: 3px;
+ background-color: var(--white);
+ transition: all 0.3s ease-in-out;
+}
+
+.bar.rotate {
+ transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar.fade {
+ opacity: 0;
+}
+
+.bar.rotate-reverse {
+ transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .navbar-right {
+   position: absolute;
+   top: 60px;
+   right: 0;
+   background-color: var(--black);
+   flex-direction: column;
+   gap: 10px;
+   width: 100%;
+   text-align: center;
+   padding: 10px 0;
+   transform: translateY(-100%);
+   opacity: 0;
+   pointer-events: none;
+   z-index: 1000;
+ }
+
+ .navbar-right.open {
+   transform: translateY(0);
+   opacity: 1;
+   pointer-events: all;
+ }
+
+ .hamburger-menu {
+   display: flex;
+ }
+}
+
+@media (max-width: 480px) {
+ .nav-link {
+   font-size: 1.5rem;
+ }
+
+ .logo {
+   width: 35px;
+   height: 35px;
+ }
+}

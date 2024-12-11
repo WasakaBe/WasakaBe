@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=º+SC&family=Jaro:opsz@6..72&family=Teko:wght@300..700&display=swap');
+
+/* General */
+:root {
+  --white: #ffffff;
+  --gray-soft: #b0b0b0;
+  --white2: #e0e0e0;
+  --blue-gradient-start: #0077b5;
+  --blue-gradient-end: #00a8e8;
+  --red-gradient-start: #ff416c;
+  --red-gradient-end: #ff4b2b;
+  --background-gradient: linear-gradient(135deg, #1e1e2e, #2c2c3d);
+   --blue-strong: #021c37; /* Azul fuerte */
+  --blue: #032a53; /* Azul fuerte */
+  --black: #000000;      /* Negro */
+   --green-highlight: #818080;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Teko', sans-serif;
+  color: var(--white);
+  overflow-x: hidden;
+}

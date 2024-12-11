@@ -1,0 +1,124 @@
+/* Skill Container */
+.skill-container {
+ padding: 2rem;
+ background: linear-gradient(180deg, #000, #1a1a2e);
+ color: #fff;
+ min-height: 100vh;
+ text-align: center;
+}
+
+.skill-title {
+ font-size: 3rem;
+ font-weight: bold;
+ font-family: "Jaro", serif;
+ margin-bottom: 2rem;
+ color: #ffffff;
+ text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Skill Section */
+.skill-section {
+ margin-bottom: 3rem;
+}
+
+.skill-section h2 {
+ font-size: 2rem;
+ font-weight: bold;
+ margin-bottom: 1rem;
+ color: #00adb5;
+ text-transform: uppercase;
+}
+
+/* Skill Grid */
+.skill-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 1.5rem;
+}
+
+.skill-item {
+ background: #1f4068;
+ padding: 1rem;
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 0.5rem;
+ font-size: 1.2rem;
+ color: #fff;
+ text-align: center;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.skill-item:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.skill-item svg {
+ fill: #00adb5;
+}
+
+/* Soft Skills */
+.soft-skill-list {
+ list-style: none;
+ padding: 0;
+ font-size: 1.2rem;
+ text-align: left;
+ max-width: 600px;
+ margin: 0 auto;
+}
+
+.soft-skill-list li {
+ background: #1f4068;
+ margin-bottom: 0.5rem;
+ padding: 0.8rem 1rem;
+ border-radius: 8px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+ transition: transform 0.3s ease;
+}
+
+.soft-skill-list li:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .skill-title {
+   font-size: 2.5rem;
+ }
+
+ .skill-section h2 {
+   font-size: 1.8rem;
+ }
+
+ .skill-grid {
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ }
+
+ .skill-item {
+   font-size: 1rem;
+   padding: 0.8rem;
+ }
+
+ .soft-skill-list li {
+   font-size: 1rem;
+   padding: 0.6rem 0.8rem;
+ }
+}
+
+@media (max-width: 480px) {
+ .skill-title {
+   font-size: 2rem;
+ }
+
+ .skill-section h2 {
+   font-size: 1.5rem;
+ }
+
+ .soft-skill-list li {
+   font-size: 0.9rem;
+ }
+}

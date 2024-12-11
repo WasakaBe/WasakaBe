@@ -1,0 +1,125 @@
+/* General Container */
+.about-container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+ background-color: #000; /* Fondo negro */
+ color: #fff; /* Texto blanco */
+ width: 100%;
+ min-height: 100vh;
+ padding: 2rem;
+ box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
+ flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* Image Styling */
+.about-img {
+ flex: 1;
+ max-width: 400px;
+ position: relative;
+ padding: 10px 20px;
+ margin-right: 20px;
+}
+
+.about-img img {
+ width: 100%;
+ height: auto;
+ border-radius: 16px;
+ object-fit: cover;
+ opacity: 0.9; /* Opacidad para el efecto */
+ transition: opacity 0.3s ease, transform 0.3s ease;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.about-img img:hover {
+ opacity: 1;
+ transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Text Content */
+.about-text {
+ flex: 2;
+ text-align: left;
+}
+
+.about-title {
+ font-size: 2.8rem;
+ font-weight: bold;
+ font-family: "Jaro", serif;
+ text-transform: uppercase;
+ letter-spacing: 0.2rem;
+ color: var(--white);
+ margin-bottom: 1rem;
+}
+
+.about-content p {
+ font-size: 1.2rem;
+ line-height: 1.8;
+ margin-bottom: 1rem;
+ color: var(--gray-soft);
+ max-width: 800px;
+}
+
+.about-content p:last-child {
+ margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+ .about-container {
+   padding: 1.5rem;
+   gap: 1.5rem;
+ }
+
+ .about-title {
+   font-size: 2.4rem;
+ }
+
+ .about-content p {
+   font-size: 1.1rem;
+ }
+}
+
+@media (max-width: 768px) {
+ .about-container {
+   flex-direction: column; /* Cambia a diseño en columna */
+   text-align: center; /* Centraliza el texto */
+ }
+
+ .about-img {
+   margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+   max-width: 300px; /* Reduce el tamaño de la imagen */
+ }
+
+ .about-text {
+   text-align: center;
+ }
+
+ .about-title {
+   font-size: 2rem;
+ }
+
+ .about-content p {
+   font-size: 1rem;
+ }
+}
+
+@media (max-width: 480px) {
+ .about-container {
+   padding: 1rem;
+ }
+
+ .about-img {
+   max-width: 100%; /* Asegura que la imagen no exceda el ancho */
+ }
+
+ .about-title {
+   font-size: 1.8rem;
+ }
+
+ .about-content p {
+   font-size: 0.9rem;
+   line-height: 1.5;
+ }
+}
