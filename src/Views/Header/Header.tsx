@@ -41,11 +41,14 @@ export default function Header() {
             <span className="quote">Make your ideas come true with cutting-edge technology!</span>
           </p>
           <div className="button-group">
-            <button className="btn linkedin-btn" onClick={redirectToLinkedIn}>
+            <button className="linkedin-btn" onClick={redirectToLinkedIn}>
               LinkedIn
             </button>
-            <button className="btn csv-btn" onClick={showPDF}>
+            <button className="csv-btn" onClick={showPDF}>
               Download CV
+            </button>
+            <button className="linkedin-btn" onClick={redirectToLinkedIn}>
+              LinkedIn
             </button>
           </div>
         </div>
