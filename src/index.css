@@ -29,4 +29,32 @@ body {
   font-family: 'Teko', sans-serif;
   color: var(--white);
   overflow-x: hidden;
+  scrollbar-width: thin; /* Barra delgada */
+  scrollbar-color: #00c6ff #001f3f; /* Colores del pulgar y fondo */
+}
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, #000000, #001f3f); /* Fondo con degradado futurista */
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #00c6ff, #0072ff); /* Pulgar con degradado brillante */
+  border-radius: 10px;
+  border: 2px solid #000000; /* Borde para destacar */
+  transition: background-image 0.3s ease; /* Transición suave */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0072ff, #00c6ff); /* Invertir colores al pasar el mouse */
+  box-shadow: 0px 0px 10px #00c6ff; /* Efecto de resplandor */
+}
+
+/* Smooth scrolling effect */
+html {
+  scroll-behavior: smooth; /* Desplazamiento lento y suave */
 }
