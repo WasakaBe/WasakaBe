@@ -6,7 +6,6 @@ import {
   FaPython,
   FaJava,
   FaBootstrap,
-  FaDatabase,
   FaDocker,
   FaCss3,
 } from 'react-icons/fa';
@@ -25,6 +24,9 @@ import {
   SiGoogleanalytics,
   SiVercel,
   SiRender,
+  SiCnn,
+  SiExpress,
+  SiDart,
 } from 'react-icons/si';
 
 import './Projects.css'
@@ -60,13 +62,13 @@ const technologyIcons: Record<string, JSX.Element> = {
   TensorFlow: <SiTensorflow size={40} />,
   Keras: <SiKeras size={40} />,
   'React Native': <FaReact size={40} />,
-  CNN: <FaDatabase size={40} />,
+  CNN: <SiCnn size={40} />,
   Pandas: <SiPandas size={40} />,
-  'Express.js': <FaNodeJs size={40} />,
+  'Express.js': <SiExpress size={40} />,
   Node: <FaNodeJs size={40} />,
   MySQL: <SiMysql size={40} />,
   Flutter: <SiFlutter size={40} />,
-  Dart: <SiFlutter size={40} />,
+  Dart: <SiDart size={40} />,
   'Google Analytics': <SiGoogleanalytics size={40} />,
 };
 export default function Projects() {

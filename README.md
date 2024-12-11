@@ -29,10 +29,6 @@ This portfolio was built using the following technologies:
 
 ---
 
-## 📸 Preview
-
-![Portfolio Preview](./preview.png)
-
 ---
 
 ## 📬 Contact Me
@@ -41,7 +37,7 @@ Feel free to connect with me:
 
 - [LinkedIn](https://linkedin.com/in/alandejesusmtz)
 - [GitHub](https://github.com/WasakaBe)
-- 📧 Email: your-email@example.com
+- 📧 Email: educontroloficial@gmail.com
 
 ---
 
