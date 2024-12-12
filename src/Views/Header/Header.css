@@ -6,7 +6,7 @@
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  padding: 2rem;
+  padding: 0.2rem;
   position: relative;
   background: linear-gradient(180deg, var(--black), var(--blue-strong), var(--blue), var(--black));
   gap: 2rem; /* Espaciado entre la imagen y el texto */
