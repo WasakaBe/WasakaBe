@@ -27,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <header className="header-container">
+    <header className="header-container" id="home">
       <div className="imagen">
         <img src={foto} alt="profile picture" />
       </div>
