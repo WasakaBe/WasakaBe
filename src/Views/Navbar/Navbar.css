@@ -7,7 +7,7 @@
  background-color: var(--black);
  color: var(--white); 
  font-family: "Teko", sans-serif;
- position: relative;
+ position: fixed;
 }
 
 /* Left Section */
