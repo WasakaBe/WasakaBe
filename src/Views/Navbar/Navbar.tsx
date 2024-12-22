@@ -21,7 +21,7 @@ export default function Navbar() {
         <a href="#projects" className="nav-link">PROJECTS</a>
         <a href="#skills" className="nav-link">SKILLS</a>
       </div>
-      <button className="hamburger-menu" onClick={toggleMenu}>
+      <button className="hamburger-menu" aria-label="hamburger-menu" onClick={toggleMenu}>
         <div className={`bar ${isMenuOpen ? 'rotate' : ''}`}></div>
         <div className={`bar ${isMenuOpen ? 'fade' : ''}`}></div>
         <div className={`bar ${isMenuOpen ? 'rotate-reverse' : ''}`}></div>
