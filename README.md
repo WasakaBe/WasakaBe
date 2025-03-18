@@ -37,7 +37,7 @@ Feel free to connect with me:
 
 - [LinkedIn](https://linkedin.com/in/alandejesusmtz)
 - [GitHub](https://github.com/WasakaBe)
-- 📧 Email: alanmartinezdevsoft@gmail.com
+- 📧 Email: mtzalan080@gmail.com
 
 ---
 
